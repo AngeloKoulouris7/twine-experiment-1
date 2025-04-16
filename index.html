@@ -23,8 +23,7 @@ Blah blah blah you have text to read
 
 [[Enter]]</tw-passagedata><tw-passagedata pid="2" name="Select text A" tags="" position="500,375" size="100,100">Filler text
 
-(text-colour: &quot;green&quot;)[
-(link: &quot;Do A&quot;)[
+(text-colour: &quot;green&quot;)[(link: &quot;Do A&quot;)[
 (set: $good to it + 1)
 (set: $bad to it - 1)
 (set: $score to it + 1)
@@ -32,8 +31,7 @@ Blah blah blah you have text to read
 (if: $score &lt; 4)[(go-to: &quot;Enter&quot;)]
 (else-if: $score &gt;= 4)[(go-to: &quot;Day 2&quot;)]
 ]]
-(text-colour: &quot;red&quot;)[
-(link: &quot;Do B&quot;)[
+(text-colour: &quot;red&quot;)[(link: &quot;Do B&quot;)[
 (set: $bad to it + 1)
 (set: $good to it - 1)
 (set: $score to it + 1)
@@ -41,7 +39,6 @@ Blah blah blah you have text to read
 (if: $score &lt; 4)[(go-to: &quot;Enter&quot;)]
 (else-if: $score &gt;=4)[(go-to: &quot;Day 2&quot;)]
 ]]
-
 [[Go Back|Enter]]</tw-passagedata><tw-passagedata pid="3" name="Select text B" tags="" position="500,525" size="100,100">Thriller Text
 
 (if: $score &gt;= 2)[The code works]
